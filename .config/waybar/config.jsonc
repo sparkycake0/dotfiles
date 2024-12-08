@@ -1,0 +1,81 @@
+{
+  "modules-left": ["sway/workspaces", "pulseaudio", "custom/spotify"],
+  "modules-center": ["sway/window"],
+  "output": "DP-4",
+  "modules-right": ["cpu", "memory", "clock", "temperature", "custom/power"],
+  "sway/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+    },
+  },
+  "custom/spotify": {
+    "interval": 1,
+    "return-type": "json",
+    "exec": "~/.config/waybar/scripts/spotify.sh",
+    "exec-if": "pgrep spotify",
+    "escape": true,
+  },
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Suspend' 'swaymsg exec systemctl suspend' -b 'shutdown' 'shutdown now'",
+  },
+  "tray": {
+    "icon-size": 20,
+    "spacing": 8,
+  },
+  "memory": {
+    "format": "RAM: {percentage}%",
+  },
+  "disk": {
+    "format": " {percentage_used}%",
+    "format-alt": " {used}/{total}",
+    "path": "/home/complicated_penguin",
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%Y-%m-%d}",
+  },
+  "sway/language": {
+    "format": " {short}",
+  },
+  "cpu": {
+    "format": "CPU: {usage}%",
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 20,
+    },
+    "format": "{capacity}% {icon}",
+    "format-charging": "{capacity}% 󰂅",
+    "format-plugged": "{capacity}% 󰂅",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+  },
+  "network": {
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰈁",
+    "format-disabled": "󰤮",
+    "format-linked": "(No IP) ",
+    "format-disconnected": "󰤭",
+    "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+  },
+  "pulseaudio": {
+    "format": "{volume}%",
+    "format-bluetooth": "{volume}% 󰂰",
+    "format-bluetooth-muted": " {icon}󰂯",
+    "format-muted": "",
+    "format-source-muted": "󰍭",
+    "on-click": "pactl set-sink-mute 0 toggle",
+  },
+}
