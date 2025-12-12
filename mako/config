@@ -1,0 +1,24 @@
+layer=top
+markup=1
+anchor=top-right
+background-color=#0E1219
+text-color=#c8e8e2
+width=450
+height=200
+max-icon-size=96
+icon-location=right
+margin=30,30,25
+padding=15,10,15
+border-size=2
+border-color=#7AC0B9
+progress-color=over #303030
+border-radius=10
+default-timeout=10000
+group-by=summary
+format=<span font="MartianMono Nerd Font weight=325 Italic" size="12288">%s</span>\n<span font="MartianMono Nerd Font weight=325" size="12288">%b</span>
+
+[grouped]
+format=<span font="MartianMono Nerd Font weight=325 Italic" size="12288">%s</span>\n<span font="MartianMono Nerd Font weight=325" size="12288">%b</span>
+
+[mode=do-not-disturb]
+invisible=1

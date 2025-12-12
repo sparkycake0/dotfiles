@@ -1,0 +1,97 @@
+@import url("/home/ognjen/.cache/wal/colors-waybar.css");
+* {
+  font-family: MartianMono Nerd Font;
+  font-size: 14px;
+  font-weight: 500;
+}
+window#waybar {
+  background-color: transparent;
+}
+.modules-left {
+  background-color: alpha(@color1, 0.5);
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 100px;
+  color: @foreground;
+}
+.modules-center {
+  background-color: alpha(@color1, 0.3);
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 100px;
+  color: @foreground;
+}
+.modules-right {
+  background-color: alpha(@color1, 0.3);
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 100px;
+  color: @foreground;
+}
+#custom-appmenuicon {
+  background-color: @color2;
+  padding: 0px 20px;
+  padding-right: 24px;
+  border-radius: 100px;
+  margin-right: 40px;
+}
+#workspaces {
+  margin-right: 20px;
+  padding: 0px 0px;
+}
+#workspaces button {
+  background-color: alpha(@color3, 0.3);
+  border-radius: 100px;
+  margin-left: 2px;
+  color: transparent;
+}
+#workspaces button.active {
+  background-color: @color5;
+  padding: 0px 25px;
+}
+
+#custom-cpu-temp,
+#disk,
+#window,
+#clock,
+#taskbar,
+#memory,
+#wireplumber,
+#custom-power {
+  margin-right: 7px;
+  border-radius: 100px;
+  padding: 0px 10px;
+}
+#window {
+  background-color: @color6;
+  padding-left: 0px;
+  padding-right: 28px;
+}
+#clock {
+  background-color: @color1;
+  margin: 2px;
+  padding: 0px 30px;
+  padding-top: 3px;
+  margin-right: 10px;
+}
+#taskbar {
+  background-color: @color8;
+}
+#memory {
+  background-color: @color9;
+}
+#custom-cpu-temp {
+  background-color: @color10;
+}
+#disk {
+  background-color: @color11;
+}
+#wireplumber {
+  background-color: @color12;
+  padding-right: 15px;
+}
+#custom-power {
+  background-color: @color13;
+  padding-right: 15px;
+  padding-left: 15px;
+}

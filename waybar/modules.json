@@ -1,0 +1,102 @@
+{
+  "custom/appmenuicon": {
+    "format": "",
+    "on-click": "~/.config/rofi/launcher/launcher.sh",
+    "tooltip": false
+  },
+  "ext/workspaces": {
+    "format": "{name}",
+    "active-only": false,
+    "all-outputs": false,
+    "sort-by-id": true,
+    "on-click": "activate",
+    "on-click-right": "deactivate"
+  },
+  "dwl/window": {
+    "format": "{layout}",
+    "rewrite": {
+      "^RT$": "Right Tile",
+      "^K$": "Desk",
+      "^VS$": "Vertical Scroll",
+      "^T$": "Tile",
+      "^S$": "Scroller",
+      "^M$": "Monocle",
+      "^G$": "Grid",
+      "^overview$": "Overview"
+    }
+  },
+  "custom/spotify": {
+    "format": "{icon} {text}",
+    "exec": "playerctl metadata --format '{{title}} - {{artist}}'",
+    "return-type": "text",
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "escape": true,
+    "max-length": 40,
+    "format-icons": [""],
+    "interval": 5,
+    "tooltip": true
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 25,
+    "tooltip-format": "{title}"
+  },
+  "disk": {
+    "paths": ["/"],
+    "format": " {used}",
+    "interval": 10,
+    "tooltip": false
+  },
+  "memory": {
+    "interval": 10,
+    "format": "󰍛 {used}GiB",
+    "max-length": 10
+  },
+  "tray": {
+    "spacing": 10
+  },
+  "clock": {
+    "tooltip-format": "{calendar}",
+    "format-alt": "  {:%a, %d %b %Y}",
+    "format": "  {:%I:%M %p}"
+  },
+  "wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "󰂰",
+    "nospacing": 1,
+    "tooltip-format": "Volume : {volume}%",
+    "format-muted": "󰝟",
+    "format-icons": {
+      "headphone": "",
+      "default": ["󰖀", "󰕾", ""]
+    },
+    "on-click": "pamixer -t",
+    "scroll-step": 1
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": {
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    "format-full": "Charged ",
+    "interval": 5,
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "tooltip": false
+  },
+  "custom/cpu-temp": {
+    "exec": "~/.config/waybar/scripts/cpu-temp.sh",
+    "interval": 10,
+    "return-type": "json",
+    "format": "{}"
+  },
+  "custom/power": {
+    "format": "󰤆",
+    "tooltip": false,
+    "on-click": "~/.config/rofi/powermenu/powermenu.sh"
+  }
+}
