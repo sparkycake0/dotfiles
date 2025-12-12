@@ -1,0 +1,11 @@
+/home/ognjen/dev/tryout/target/debug/deps/str_indices-f2f99f294f6cdd95.d: /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/lib.rs /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/byte_chunk.rs /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/chars.rs /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/lines.rs /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/lines_crlf.rs /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/lines_lf.rs /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/utf16.rs
+
+/home/ognjen/dev/tryout/target/debug/deps/libstr_indices-f2f99f294f6cdd95.rmeta: /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/lib.rs /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/byte_chunk.rs /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/chars.rs /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/lines.rs /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/lines_crlf.rs /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/lines_lf.rs /home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/utf16.rs
+
+/home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/lib.rs:
+/home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/byte_chunk.rs:
+/home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/chars.rs:
+/home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/lines.rs:
+/home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/lines_crlf.rs:
+/home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/lines_lf.rs:
+/home/ognjen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/str_indices-0.4.4/src/utf16.rs:
