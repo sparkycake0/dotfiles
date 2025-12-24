@@ -1,26 +1,29 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
+    event = { "BufReadPost", "BufNewFile" },
+    build = ":TSUpdate",
     opts = function(_, opts)
+      opts.ensure_installed = opts.ensure_installed or {}
       vim.list_extend(opts.ensure_installed, {
         "javascript",
         "typescript",
-        "jsx",
         "tsx",
         "css",
         "html",
         "json",
         "yaml",
-        "prisma",
-        "sql",
         "lua",
         "python",
-        "java",
+        "rust",
+        "go",
         "c",
         "cpp",
-        "go",
-        "rust",
+        "java",
       })
+      opts.highlight = { enable = true }
+      opts.indent = { enable = true }
+      return opts
     end,
   },
 }

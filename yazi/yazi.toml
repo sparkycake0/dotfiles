@@ -12,5 +12,3 @@ wrap = "yes"
 edit = [
   { run = "nvim $@", block = true, desc = "Neovim", for="unix" }
 ]
-
-

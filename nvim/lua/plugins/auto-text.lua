@@ -8,16 +8,6 @@ return {
     config = true,
   },
   {
-    "saghen/blink.cmp",
-    opts = {
-      completion = {
-        documentation = {
-          auto_show = true,
-        },
-      },
-    },
-  },
-  {
     "lukas-reineke/indent-blankline.nvim",
     event = { "BufReadPost", "BufNewFile" },
     main = "ibl",

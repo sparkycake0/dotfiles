@@ -82,15 +82,6 @@
     unzip
     harper
     btop
-    jre8
-    jdk8_headless
-    libx11
-    libxext
-    libxrender
-    libxi
-    libxrandr
-    libxtst
-    libxcursor
     libGL
     openssl
     pkg-config
@@ -100,6 +91,8 @@
     sqlite
     sql-formatter
     bun
+    pnpm
+    pnpm-shell-completion
     catnip
     quickshell
     kdePackages.qtdeclarative
@@ -133,5 +126,24 @@
     helix-gpt
     p4v
     p4d
+    drawio
+    nest-cli
+    xorg.libX11
+    xorg.libXext
+    xorg.libXrender
+    xorg.libXi
+    xorg.libXrandr
+    xorg.libXtst
+    xorg.libXcursor
+    jdk21
+    fontconfig
+    gtk3
+    mesa
+    prismlauncher
+    glfw
+    glfw3-minecraft
+    tailwindcss-language-server
+    emmet-language-server
+    emmet-ls
   ];
 }

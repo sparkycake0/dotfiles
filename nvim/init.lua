@@ -1,3 +1,7 @@
+if vim.loader then
+  vim.loader.enable()
+end
+
 require("config.lazy")
 require("lazy").setup({
   { import = "plugins" },

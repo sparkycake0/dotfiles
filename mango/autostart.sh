@@ -1,4 +1,6 @@
 waybar &
+waybar -c ~/.config/waybar-minimal/config.jsonc \
+  -s ~/.config/waybar-minimal/style.css &
 swww-daemon &
 swaync &
 mako &
